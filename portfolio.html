@@ -1,0 +1,99 @@
+<body>
+  <header>
+    <h1>ARADHANA RANI</h1>
+    <p>ECE Student | Web Developer | Tech Enthusiast</p>
+    <div class="header-actions">
+      <button class="theme-toggle">☀️/🌙</button>
+      <nav class="header-nav">
+        <a href="#home">Home</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <link rel="stylesheet" href="portfolio.css">
+  <div class="container">
+    <section class="about" id="home">
+      <img src="c:\Users\Computer\Pictures\Aradhanarani.png" alt="Aradhana Rani">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Motivated Electronics and Communication Engineering student with experience in Python, AI, HTML, and Cybersecurity. Passionate about solving real-world problems using innovative tech. Hands-on with web development and AI projects including Vision Transformer and Text Classification. Participated in hackathons and certified in multiple technologies.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">Python</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">Cybersecurity</div>
+        <div class="skill-item">SQL</div>
+        <div class="skill-item">Basic C</div>
+        <div class="skill-item">GitHub</div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a href="https://student-sphere-six.vercel.app/" target="_blank">
+            <img src="c:\Users\Computer\Pictures\images (2).png" alt="StudentSphere Project">
+          </a>
+          <h3>StudentSphere</h3>
+          <p>
+            Developed a full-stack student social platform with profiles, posts, chat, and resume uploads using HTML, CSS, JavaScript, and Firebase. Features include skill tracking, dark mode, and responsive UI.<br>
+            <a href="https://student-sphere-six.vercel.app/" target="_blank">Open StudentSphere</a>
+          </p>
+        </div>
+    <div class="project-card">
+      <a href="file:///C:/Users/Computer/Documents/Landing%20Page/landing%20page.html" target="_blank">
+        <img src="c:\Users\Computer\Pictures\images (1).png" alt="Landing Page Project">
+      </a>
+      <h3>Landing Page – Frontend</h3>
+      <p>
+        Designed a modern and responsive landing page using HTML and CSS. Features include a hero section, call-to-action, and clean layout for showcasing products or services.<br>
+        <a href="file:///C:/Users/Computer/Documents/Landing%20Page/landing%20page.html" target="_blank">Open Landing Page</a>
+      </p>
+        </div>
+      </div>
+    </section>
+
+<section class="contact-resume-section">
+  <div class="contact-box">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:aradhana.rani.738@gmail.com">aradhana.rani.738@gmail.com</a></p>
+    <p>Phone: +91 7384933584</p>
+    <p>
+      <a href="https://linkedin.com/in/aradhana-rani-174416295" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/aaradhanaaaa" target="_blank">GitHub</a>
+    </p>
+  </div>
+  <div class="resume-box">
+    <h3>Resume</h3>
+    <a href="file:///C:/Users/Computer/Documents/Resume%20aradhana.pdf" target="_blank">Open My Resume</a>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Aradhana Rani. All rights reserved.</p>
+  </footer>
+
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+    document.querySelector('.theme-toggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem(
+        'theme',
+        document.body.classList.contains('dark-mode') ? 'dark' : 'light'
+      );
+       });
+  </script>
+</body>
